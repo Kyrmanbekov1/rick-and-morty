@@ -14,12 +14,7 @@ class CharacterRepositoryImpl implements CharacterRepository{
    return await useCase.getData(name: results  ?? '');
   }
 
-  @override
-  Future<EpisodeModel> getEpisodes(String? url) {
-    
-    throw UnimplementedError();
-  }
- 
+
 
 
 }

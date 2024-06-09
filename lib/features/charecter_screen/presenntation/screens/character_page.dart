@@ -106,7 +106,7 @@ class _CharacterPageState extends State<CharacterPage> {
                     ? InkWell(
                       onTap: () {
                        
-                       Navigator.push(context, MaterialPageRoute(builder: (context)=> CharacterInfoScreen(characters: character,)));
+                       Navigator.push(context, MaterialPageRoute(builder: (context)=> CharacterInfoScreen(characters: character, )));
                       },
                       child: ListViewWidget(characters: character))
                     : SizedBox.shrink();

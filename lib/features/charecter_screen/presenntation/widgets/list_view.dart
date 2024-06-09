@@ -12,6 +12,7 @@ class ListViewWidget extends StatelessWidget {
 final Results characters;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 14),
       child: Row(
@@ -40,9 +41,7 @@ final Results characters;
           ),
           Text(
             characters.name ?? '',
-          style: TextStyle(
-            color: AppColors.white,
-          ),
+          style: theme.textTheme.bodyLarge,
           ),
           SizedBox(
             height: 3,

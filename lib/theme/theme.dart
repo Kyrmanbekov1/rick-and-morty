@@ -8,10 +8,15 @@ bool isDarkTheme = true;
     scaffoldBackgroundColor: AppColors.darkbackgr
   );
 void changeTheme(){
-isDarkTheme != isDarkTheme;
+isDarkTheme =! isDarkTheme;
 theme = ThemeData(
     scaffoldBackgroundColor: isDarkTheme? AppColors.darkbackgr : AppColors.lightbackgr,
-    appBarTheme: AppBarTheme(backgroundColor:isDarkTheme? AppColors.darkbackgr : AppColors.lightbackgr, )
+    appBarTheme: AppBarTheme(backgroundColor:isDarkTheme? AppColors.darkbackgr : AppColors.lightbackgr, ),
+
+          textTheme: TextTheme(
+        bodyLarge: TextStyle(color: isDarkTheme ? AppColors.white : AppColors.darkbackgr),
+      
+      ),
   );
   notifyListeners();
 }

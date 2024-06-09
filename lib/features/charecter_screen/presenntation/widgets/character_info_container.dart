@@ -7,6 +7,7 @@ class CharacterInfoCintainer extends StatelessWidget {
   final String subtitle;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Column(
       children: [
         Text(
@@ -20,8 +21,7 @@ class CharacterInfoCintainer extends StatelessWidget {
         ),
         Text(
           subtitle,
-          style: TextStyle(
-            color: AppColors.white,
+          style: theme.textTheme.bodyLarge?.copyWith(
             fontWeight: FontWeight.w400,
             fontSize: 14,
             height: 2,

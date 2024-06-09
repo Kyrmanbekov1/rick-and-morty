@@ -10,6 +10,7 @@ class GridListWidget extends StatelessWidget {
 final Results characters;
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Column(
       children: [
         CircleAvatar(
@@ -33,8 +34,9 @@ final Results characters;
     ),
     Text(
       characters.name ?? '',
-    style: TextStyle(
-      color: AppColors.white,
+    style: theme.textTheme.bodyLarge?.copyWith(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
     ),
     ),
     SizedBox(

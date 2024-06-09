@@ -4,6 +4,12 @@
 	<dict>
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>$(need to profile photo)</string>
+		<key>NSCameraUsageDescription</key>
+		<string>$(need to profile photo)</string>
+		<key>NSMicrophoneUsageDescription</key>
+		<string>$(need to profile photo)</string>
 		<key>CFBundleDisplayName</key>
 		<string>Rick And Morty</string>
 		<key>CFBundleExecutable</key>
